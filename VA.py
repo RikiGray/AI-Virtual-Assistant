@@ -57,19 +57,19 @@ if __name__ == "__main__":
 
         elif 'open youtube' in query:
             webbrowser.open("youtube.com")
-            speak("youtube is opened")
+            speak("youtube has been opened")
         elif 'open google' in query:
             webbrowser.open("google.com")
-            speak("google is opened")
+            speak("google has been opened")
         elif 'open gmail' in query:
             webbrowser.open("gmail.com")
-            speak("gmail is opened")
+            speak("gmail has been opened")
         elif 'play music' in query:
             music_dir = 'D:\\music'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
-            speak("music is being played")
+            speak("music has started and is being played")
         elif 'time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"the time is {strTime}")
